@@ -14,5 +14,7 @@ export class Todoapp {
   sendData() {
     this.dataEvent.emit(this.content);
     console.log(this.content);
+    //reset the value of the input
+    this.content=""
   }
 }
