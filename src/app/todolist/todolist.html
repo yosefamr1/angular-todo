@@ -1,16 +1,13 @@
-
-
 <section class="list">
     <div class="container">
-    <h2>To Do list</h2>
+        <h2>To Do list</h2>
         <div class="todolist">
-        
+            <!-- show all array (tasks) -->
             @for (task of todoarr; track $index) {
-                <div class="task">{{task}}</div>
+            <div class="task">{{task.title}} <button (click)="deletetask(task.id)">delete</button></div>
             }
-                       
         </div>
-            
+
     </div>
 
 </section>
